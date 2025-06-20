@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: OAuth2
+
+  profiles:
+    active: local
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+
+  h2:
+    console:
+      enabled: true
+
